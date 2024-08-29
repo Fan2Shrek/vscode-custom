@@ -25,8 +25,8 @@ const compile = ({
 
     const compiledJs = compiler.compile('./main.js');
 
-    fs.writeFileSync(`./${dir}/custom.css`, compiledSass.css);
-    fs.writeFileSync(`./${dir}/custom.js`, compiledJs);
+    fs.writeFileSync(`${dir}/custom.css`, compiledSass.css);
+    fs.writeFileSync(`${dir}/custom.js`, compiledJs);
 }
 
 const defaultOptions = {
