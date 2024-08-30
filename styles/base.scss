@@ -43,6 +43,16 @@
             &:hover {
                 background: rgba(0, 0, 0, 0.2) !important;
             }
+
+            // &.selected {
+            //     .monaco-highlighted-label {
+            //         background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+            //         background-size: 800% 800%;
+            //         -webkit-background-clip: text;
+            //         -webkit-text-fill-color: transparent;
+            //         animation: rainbow 3s ease infinite;
+            //     }
+            // }
         }
 
         &-rows {
@@ -54,4 +64,18 @@
 
 .notifications-toasts .monaco-list-row:hover {
     background: none !important;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100%{
+        background-position: 0% 50%
+    }
 }
