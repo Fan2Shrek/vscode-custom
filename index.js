@@ -10,7 +10,7 @@ const compile = ({
     }
 
     const compiledSass = sass.compile('./main.scss', {
-      outputStyle: 'compressed',
+      style: 'compressed',
     });
 
     const compiler = {
