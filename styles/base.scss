@@ -1,0 +1,57 @@
+@use 'variables' as v;
+
+.monaco {
+    &-editor {
+        .scroll-decoration {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75) !important;
+            top: -6px !important;
+        }
+
+        &-hover {
+            box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+            padding: 6px !important;
+            background-image: linear-gradient(v.$black 0%, #1d1c2c 100%) !important;
+            backdrop-filter: blur(3px) !important;
+            border-radius: 20px !important;
+            border: none !important;
+        }
+
+        .line-numbers {
+            color: transparentize(v.$white, 0.5);
+
+            &.active-line-number {
+                color: v.$white;
+            }
+        }
+    }
+
+    &-hover {
+        box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+        padding: 6px !important;
+        background-image: linear-gradient(v.$black 0%, #1d1c2c 100%) !important;
+        backdrop-filter: blur(3px) !important;
+        border-radius: 20px !important;
+        border: none !important;
+    }
+
+    &-inputBox {
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    &-list {
+        &-row {
+            &:hover {
+                background: rgba(0, 0, 0, 0.2) !important;
+            }
+        }
+
+        &-rows {
+            background: transparent !important;
+        }
+    }
+
+}
+
+.notifications-toasts .monaco-list-row:hover {
+    background: none !important;
+}
